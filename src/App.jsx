@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import './App.css';
-const API_BASE='http://localhost:5001/api';
+const API_BASE = 'https://dev-lens-yq4x.vercel.app/api';
 const TOOL_CONFIG={
   error:{label: '[1] Stacktrace & Fix',placeholder: 'Paste error stacktrace or broken code...' },
   refactor:{label: '[2] Refactor & Review',placeholder: 'Paste code to audit and optimize...' },
