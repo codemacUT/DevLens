@@ -59,6 +59,8 @@ DevLens/
 │   ├── models/
 │   │   └── Analysis.js
 │   ├── .env                 # local only; never commit
+│   ├── package-lock.json
+│   ├── test-db.js           # optional MongoDB connectivity check
 │   ├── index.js             # Express API and Gemini integration
 │   └── package.json
 ├── public/
@@ -222,6 +224,7 @@ Example response shape:
 ## Development notes
 
 - The backend will exit if it cannot connect to MongoDB.
+- Run `node backend/test-db.js` to check MongoDB connectivity using the configured `MONGO_URI`.
 - The frontend displays the backend error message when an analysis request fails.
 - Generated Markdown markers are stripped from the stored/displayed output by the current implementation.
 - The Gemini model and prompt configuration live in `backend/index.js`.
